@@ -1,0 +1,54 @@
+.navbar {
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  background-color: var(--primary-dark);
+}
+
+.linkText {
+  color: var(--font-color-light);
+  font-weight: bold;
+}
+
+.headerText {
+  font-size: xx-large;
+  margin-left: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.headerFirstLetter {
+  color: var(--accent-light);
+}
+
+.headerRestOfLetters {
+  color: var(--font-color-light);
+}
+
+.link {
+  display: inline-flex;
+  align-items: center;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.links {
+  margin-right: 25px;
+}
+
+.vLine {
+  display: inline;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-left: 1px solid;
+}
+
+.icon {
+  margin-left: 5px;
+}
+
+.link:hover > .linkText {
+  color: var(--primary);
+}

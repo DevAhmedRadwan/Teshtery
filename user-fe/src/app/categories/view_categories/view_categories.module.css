@@ -1,0 +1,43 @@
+.categoryList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.category {
+  width: 200px;
+  height: 150px;
+  padding: 25px;
+  margin: 25px;
+  border-radius: 5px;
+  color: var(--primary-dark);
+  background-color: var(--background);
+  cursor: pointer;
+  font-size: medium;
+}
+
+.category:hover {
+  background-color: var(--background-dark);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.category:hover > .categoryHeader {
+  color: var(--secondary-dark);
+  font-size: large;
+}
+
+.categoryHeader {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.categoryBody {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: small;
+}

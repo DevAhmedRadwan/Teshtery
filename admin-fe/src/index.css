@@ -1,0 +1,146 @@
+:root {
+  --background: #fcfcfc;
+  --background-light: #ffffff;
+  --background-dark: #b3b5ec;
+  --background-shaded: #e6e6e6;
+  --surface: #fafafa;
+  --surface-light: #ffffff;
+  --surface-dark: #e9e9e9;
+  --primary: #161c96;
+  --primary-light: #2b32af;
+  --primary-dark: #050c99;
+  --danger: #be0427;
+  --danger-light: #c91d3d;
+  --danger-dark: #a80321;
+  --error: #b00020;
+  --font-color-dark: #000000;
+  --font-color-light: #ffffff;
+}
+
+span,
+label,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+a,
+input,
+textarea {
+  font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+html,
+body,
+#root,
+.App,
+.Home,
+.AddAdmin,
+.Categories,
+.ViewCategories,
+.AddCategory,
+.Tags,
+.ViewUsers,
+.Products {
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  margin: 0px;
+  background-color: var(--background-dark);
+}
+
+.active {
+  background-color: var(--primary);
+  color: var(--font-color-light) !important;
+}
+
+.active:hover {
+  background-color: var(--primary-light) !important;
+}
+
+.btn {
+  width: 100%;
+  padding: 15px;
+  color: var(--font-color-light);
+  background-color: var(--primary);
+  border: none;
+  border-radius: 15px;
+}
+
+.btn:hover {
+  background-color: var(--primary-light);
+}
+
+.error {
+  color: var(--error);
+  font-size: x-small;
+  padding-left: 5px;
+}
+
+.formInput{
+  display:block;
+  border-radius: 10px;
+  border: 1px solid;
+  color: var(--font-color-dark);
+  background-color: var(--background-light);
+  border-color: var(--surface-dark);
+  padding: 10px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.formInput:focus {
+  outline: none;
+  border: 1px solid;
+  border-color: var(--primary);
+}
+
+.dropdown {
+  width: 100%;
+}
+
+.formField {
+  width: 100%;
+}
+
+.formField + .formField {
+  margin-top: 20px;
+}
+
+.notification{
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-top-left-radius: 5px;
+  color: var(--font-color-light);
+  font-weight: bold;
+  bottom: 0;
+  right: 0;
+  margin: 0px;
+  padding: 0px;
+  width: 200px;
+  height: 50px;
+  background-color: var(--primary);
+}
+
+/* removing the arrows from number input*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* removing the arrows from number input*/
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}

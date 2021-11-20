@@ -1,0 +1,78 @@
+.container {
+  margin-left: 150px;
+  padding: 0px;
+  padding-top: 60px;
+  padding-left: 30px;
+  padding-right: 30px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+.form {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--background);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.textArea {
+  resize: none;
+}
+
+.subcategoryContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 5px;
+  margin-right: 10px;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.subcategoryContainer:hover {
+  background-color: var(--background-shaded);
+}
+
+.subcategory {
+  margin-left: 5px;
+}
+
+.subcategoryBtn {
+  margin-right: 10px;
+  background-color: var(--danger);
+  width: 90px;
+  padding: 5px;
+  color: var(--font-color-light);
+}
+
+.subcategoryBtn:hover {
+  background-color: var(--danger-light);
+}
+
+.submitBtn {
+  font-weight: bold;
+}
+
+.addSubcategory {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+}
+
+.addSubcategoryBtn {
+  width: 60px;
+  margin-left: 10px;
+  background-color: var(--primary);
+  color: var(--font-color-light);
+
+}
+
+.addSubcategoryBtn:hover {
+  background-color: var(--primary-light);
+}

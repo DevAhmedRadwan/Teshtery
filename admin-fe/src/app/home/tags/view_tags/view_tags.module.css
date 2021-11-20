@@ -1,0 +1,91 @@
+.container {
+  margin-left: 150px;
+  padding: 0px;
+  padding-top: 60px;
+  padding-left: 30px;
+  padding-right: 30px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+.addTag {
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+  width:50px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.addTagIcon {
+  height: 100%;
+  border-radius: 25px;
+}
+
+.tag {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid var(--background-shaded);
+  padding: 10px;
+  background-color: var(--background);
+  border-radius: 5px;
+}
+
+.tagName {
+  color: var(--font-color-dark);
+}
+
+.edit {
+  background-color: var(--primary);
+}
+
+.edit:hover {
+  background-color: var(--primary-dark);
+}
+
+.delete {
+  background-color: var(--danger);
+}
+
+.delete:hover {
+  background-color: var(--danger-dark);
+}
+
+.edit, .delete {
+  color: var(--font-color-light);
+  margin-left: 5px;
+  margin-right: 5px;
+  padding: 5px;
+  width: 80px;
+  height: 30px;
+  font-size: small;
+  border: none;
+  border-radius: 2px;
+}
+
+.pagechangerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pagechanger {
+  display: flex;
+  align-items: center;
+  border: none;
+  background-color: transparent;
+  margin: 5px;
+}
+
+.pagenumber{
+  margin: 5px;
+}

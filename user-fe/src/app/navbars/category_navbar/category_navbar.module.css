@@ -1,0 +1,137 @@
+.category {
+  font-size: small;
+  font-weight: bold;
+  margin-left: 10px;
+  color: var(--font-color-dark);
+}
+
+.category:hover {
+  color: var(--secondary-dark);
+  cursor: pointer;
+}
+
+.categorybar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 1px solid;
+  border-color: var(--secondary-dark);
+  background-color: var(--surface);
+}
+
+.allCategoryText {
+  font-size: small;
+  font-weight: bold;
+  padding-right: 25px;
+  margin-left: 25px;
+}
+
+.allCategoryIcon {
+  margin-right: 10px;
+}
+
+.allCategory {
+  height: 44px;
+  width: 226px;
+  border: none;
+  border-radius: 0px;
+  background-color: var(--surface);
+  padding: 0px;
+  color: var(--secondary-dark);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.allCategoryContainer {
+  position: relative;
+  border-right: 1px solid;
+  border-color: var(--secondary-dark);
+}
+
+.allCategoryMenu {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  z-index: 1;
+  width: 176px;
+  padding: 25px;
+  background-color: var(--surface);
+  border-right: 1px solid;
+  border-color: var(--secondary-dark);
+}
+
+.allCategory:hover + .allCategoryMenu {
+  display: flex;
+}
+
+.allCategoryMenu:hover {
+  display: flex;
+}
+
+.allCategoryMenuItem {
+  font-size: smaller;
+  cursor: pointer;
+  color: var(--font-color-dark);
+}
+
+.allCategoryMenuSelectedItem {
+  font-size: medium;
+  color: var(--secondary-dark);
+  cursor: pointer;
+}
+
+.allCategoryMenuItem + .allCategoryMenuItem,
+.allCategoryMenuSelectedItem + .allCategoryMenuItem,
+.allCategoryMenuItem + .allCategoryMenuSelectedItem {
+  padding-top: 15px;
+}
+
+.allCategorySubMenu {
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin-left: 227px;
+  background-color: var(--surface-light);
+  height: 100%;
+  min-width: 300px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.allCategorySubMenuTitle{
+  color: var(--secondary-dark);
+}
+
+.allCategorySubMenuData {
+  padding: 20px;
+}
+
+.hLine {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  color: var(--surface-dark);
+  border-bottom: 1px solid;
+}
+
+.selectCategoryDetails {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  list-style: none;
+  -ms-box-orient: horizontal;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.subcategory {
+  font-size: smaller;
+  padding: 5px 10px 0px 0px;
+  color: var(--font-color-dark);
+}
+
+.allCategorySubMenuTitle:hover,
+.subcategory:hover {
+  cursor: pointer;
+  color: var(--secondary-dark);
+}

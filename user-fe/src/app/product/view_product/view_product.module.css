@@ -1,0 +1,77 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+  width: 100%;
+}
+
+.name {
+  font-size: xx-large;
+  font-weight: bold;
+}
+
+.type {
+  font-size: small;
+}
+
+.details {
+  display: flex;
+  flex-direction: row;
+  margin: 10px 10px 10px 0px;
+  width: 100%;
+}
+
+.imagePLaceHolder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid;
+  width: 400px;
+  height: 400px;
+  font-size: 200px;
+}
+
+.data {
+  margin: 0px 10px 10px 10px;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+.price, .description, .tagContainer {
+  margin-bottom: 10px;
+}
+
+.tagContainer{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tag {
+  padding: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: 1px solid;
+  border-color: var(--primary);
+  border-radius: 2px;
+}
+
+.tag + .tag {
+  margin-left: 5px;
+}
+
+.addToCartContainer{
+  display: flex;
+  flex-direction: row;
+}
+
+.addToCartInput{
+  width:50px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.addToCartButton{
+  margin: 5px;
+  border-radius: 5px;
+}

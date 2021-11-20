@@ -1,0 +1,8 @@
+{
+  "events": {
+    "restart": "clear"
+  },
+  "ignore": [".vscode/*"],
+  "watch": ["*.*",".env"],
+  "ext": "js, yaml"
+}

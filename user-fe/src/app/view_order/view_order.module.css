@@ -1,0 +1,68 @@
+.caontainer {
+  margin: 15px;
+}
+
+.product {
+  border: 1px solid;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.firstRow {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.secRow {
+  display: flex;
+  justify-content: space-between;
+}
+
+.name {
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.total {
+  font-weight: bold;
+}
+
+.count {
+  width: 50px;
+}
+
+.remove {
+  padding: 5px;
+  width: 150px;
+  background-color: var(--danger);
+}
+
+.remove:hover {
+  background-color: var(--danger-dark);
+}
+
+.addContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.totalSum {
+  font-size: large;
+  font-weight: bold;
+}
+
+.line {
+  border-bottom: 1px solid;
+  width: 100px;
+  margin: 5px;
+}
+
+.add {
+  width: 150px;
+}

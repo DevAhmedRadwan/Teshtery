@@ -1,0 +1,72 @@
+.container {
+  margin-left: 150px;
+  padding: 0px;
+  padding-top: 60px;
+  padding-left: 30px;
+  padding-right: 30px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+.user {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid var(--background-shaded);
+  padding: 10px;
+  background-color: var(--background);
+  border-radius: 5px;
+}
+
+.userName {
+  color: var(--font-color-dark);
+}
+
+.enable {
+  background-color: var(--primary);
+}
+
+.enable:hover {
+  background-color: var(--primary-dark);
+}
+
+.disable {
+  background-color: var(--danger);
+}
+
+.disable:hover {
+  background-color: var(--danger-dark);
+}
+
+.enable, .disable {
+  color: var(--font-color-light);
+  margin-left: 5px;
+  margin-right: 5px;
+  padding: 5px;
+  width: 80px;
+  height: 30px;
+  font-size: small;
+  border: none;
+  border-radius: 2px;
+}
+
+.pagechangerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pagechanger {
+  display: flex;
+  align-items: center;
+  border: none;
+  background-color: transparent;
+  margin: 5px;
+}
+
+.pagenumber{
+  margin: 5px;
+}
