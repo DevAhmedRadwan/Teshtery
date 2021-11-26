@@ -26,7 +26,7 @@ const AddCategory = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     send({
-      url: "http://localhost:3700/category/",
+      url: "http://localhost:3000/category/",
       headers: {
         "Authorization": localStorage.getItem("token"),
         "Content-Type": "application/json"

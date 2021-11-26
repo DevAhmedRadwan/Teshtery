@@ -10,7 +10,7 @@ const ViewProduct = () => {
 
   useEffect(() => {
     getProducts({
-      url: `http://localhost:3700/product/?_id=${productid}&pop=true`,
+      url: `http://localhost:3200/product/?_id=${productid}&pop=true`,
       method: "GET",
     });
     // eslint-disable-next-line

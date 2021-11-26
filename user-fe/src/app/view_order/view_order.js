@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import useHttp from "../../hooks/use_http.js";
 import viewOrderStyle from "./view_order.module.css";
@@ -10,7 +10,7 @@ const ViewOrder = () => {
 
   useEffect(() => {
     getOrder({
-      url: `http://localhost:3700/order/?_id${orderid}`,
+      url: `http://localhost:3200/order/?_id${orderid}`,
       headers: {
         Authorization: localStorage.getItem("token"),
         "Content-Type": "application/json",

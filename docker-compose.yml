@@ -1,0 +1,43 @@
+version: "3.9"
+
+services:
+  teshtery-db:
+    image: mongo:latest
+    volumes:
+      - ./db:/data/db
+    network_mode: host
+    command: 'mongod --port 27018'
+    logging:
+      driver: none
+  teshtery-admin-api:
+    image: node:14
+    volumes:
+      - ./admin-api:/app/src
+    network_mode: host
+    command: bash -c "cd /app/src && npm run dev"
+    depends_on:
+      - teshtery-db
+  teshtery-user-api:
+    image: node:14
+    volumes:
+      - ./user-api:/app/src
+    network_mode: host
+    command: bash -c "cd /app/src && npm run dev"
+    depends_on:
+      - teshtery-db
+  teshtery-admin-fe:
+    image: node:14
+    volumes:
+      - ./admin-fe:/app/src
+    network_mode: host
+    command: bash -c "cd /app/src && npm run start"
+    depends_on:
+      - teshtery-admin-api
+  teshtery-user-fe:
+    image: node:14
+    volumes:
+      - ./user-fe:/app/src
+    network_mode: host
+    command: bash -c "cd /app/src && npm run start"
+    depends_on:
+      - teshtery-user-api

@@ -21,7 +21,7 @@ const ViewUsers = () => {
 
   useEffect(() => {
     getUser({
-      url: `http://localhost:3700/user/?page=${page}&pagesize=${pageSize}`,
+      url: `http://localhost:3000/user/?page=${page}&pagesize=${pageSize}`,
       headers: {
         Authorization: localStorage.getItem("token"),
         "Content-Type": "application/json",
@@ -33,7 +33,7 @@ const ViewUsers = () => {
 
   const ban = (id) => {
     disableUser({
-      url: `http://localhost:3700/user/disable/${id}`,
+      url: `http://localhost:3000/user/disable/${id}`,
       headers: {
         Authorization: localStorage.getItem("token"),
         "Content-Type": "application/json",
@@ -44,7 +44,7 @@ const ViewUsers = () => {
 
   const activate = (id) => {
     enableUser({
-      url: `http://localhost:3700/user/enable/${id}`,
+      url: `http://localhost:3000/user/enable/${id}`,
       headers: {
         Authorization: localStorage.getItem("token"),
         "Content-Type": "application/json",

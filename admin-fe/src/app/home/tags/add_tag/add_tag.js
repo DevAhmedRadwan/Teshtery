@@ -9,7 +9,7 @@ const AddTag = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     send({
-      url: "http://localhost:3700/tag/",
+      url: "http://localhost:3000/tag/",
       headers: {
         "Authorization": localStorage.getItem("token"),
         "Content-Type": "application/json"

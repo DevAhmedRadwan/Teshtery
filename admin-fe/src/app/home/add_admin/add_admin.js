@@ -14,7 +14,7 @@ const AddAdmin = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     send({
-      url: "http://localhost:3700/admin/",
+      url: "http://localhost:3000/admin/",
       headers: {
         "Authorization": localStorage.getItem("token"),
         "Content-Type": "application/json"

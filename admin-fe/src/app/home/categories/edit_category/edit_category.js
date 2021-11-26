@@ -41,7 +41,7 @@ const EditCategory = () => {
 
   useEffect(() => {
     getCategory({
-      url: `http://localhost:3700/category/?_id=${id}`,
+      url: `http://localhost:3000/category/?_id=${id}`,
       headers: {
         Authorization: localStorage.getItem("token"),
         "Content-Type": "application/json",
@@ -66,7 +66,7 @@ const EditCategory = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     send({
-      url: `http://localhost:3700/category/${id}`,
+      url: `http://localhost:3000/category/${id}`,
       headers: {
         Authorization: localStorage.getItem("token"),
         "Content-Type": "application/json",

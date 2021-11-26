@@ -20,7 +20,7 @@ const ViewTags = () => {
 
   useEffect(() => {
     getTag({
-      url: `http://localhost:3700/tag/?page=${page}&pagesize=${pageSize}`,
+      url: `http://localhost:3000/tag/?page=${page}&pagesize=${pageSize}`,
       headers: {
         Authorization: localStorage.getItem("token"),
         "Content-Type": "application/json",
@@ -32,7 +32,7 @@ const ViewTags = () => {
 
   const removeCategory = (id) => {
     deleteCategory({
-      url: `http://localhost:3700/tag/${id}`,
+      url: `http://localhost:3000/tag/${id}`,
       headers: {
         Authorization: localStorage.getItem("token"),
         "Content-Type": "application/json",

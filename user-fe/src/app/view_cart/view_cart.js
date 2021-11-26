@@ -13,7 +13,7 @@ const ViewCart = () => {
 
   useEffect(() => {
     if(cart){
-      let url = "http://localhost:3700/product/?";
+      let url = "http://localhost:3200/product/?";
       let ids = Object.keys(cart);
       ids.forEach((id, index) => {
         url += `ids=${id}`;
@@ -68,7 +68,7 @@ const ViewCart = () => {
       })
     })
     send({
-      url: "http://localhost:3700/order/",
+      url: "http://localhost:3200/order/",
       headers: {
         "Authorization": localStorage.getItem("token"),
         "Content-Type": "application/json"

@@ -25,7 +25,7 @@ const EditTag = () => {
 
   useEffect(() => {
     getTag({
-      url: `http://localhost:3700/tag/?_id=${id}`,
+      url: `http://localhost:3000/tag/?_id=${id}`,
       headers: {
         Authorization: localStorage.getItem("token"),
         "Content-Type": "application/json",
@@ -48,7 +48,7 @@ const EditTag = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     send({
-      url: `http://localhost:3700/tag/${id}`,
+      url: `http://localhost:3000/tag/${id}`,
       headers: {
         Authorization: localStorage.getItem("token"),
         "Content-Type": "application/json",

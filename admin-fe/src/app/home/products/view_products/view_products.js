@@ -20,7 +20,7 @@ const ViewProducts = () => {
 
   useEffect(() => {
     getProduct({
-      url: `http://localhost:3700/product/?page=${page}&pagesize=${pageSize}`,
+      url: `http://localhost:3000/product/?page=${page}&pagesize=${pageSize}`,
       headers: {
         Authorization: localStorage.getItem("token"),
         "Content-Type": "application/json",
@@ -32,7 +32,7 @@ const ViewProducts = () => {
 
   const removeProduct = (id) => {
     deleteProduct({
-      url: `http://localhost:3700/product/${id}`,
+      url: `http://localhost:3000/product/${id}`,
       headers: {
         Authorization: localStorage.getItem("token"),
         "Content-Type": "application/json",

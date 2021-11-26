@@ -16,7 +16,7 @@ const ViewProducts = () => {
     //const query = queryString.parse(search);
 
     getProducts({
-      url: `http://localhost:3700/product/?page=${page}&pagesize=${pageSize}`,
+      url: `http://localhost:3200/product/?page=${page}&pagesize=${pageSize}`,
       method: "GET",
     });
     // eslint-disable-next-line

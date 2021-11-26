@@ -15,7 +15,7 @@ const Signup = ({ setIsLoggedIn }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     send({
-      url: "http://localhost:3700/auth/signup",
+      url: "http://localhost:3200/auth/signup",
       method: "POST",
       body: { username, email, password },
     });

@@ -20,7 +20,7 @@ const ViewCategories = () => {
 
   useEffect(() => {
     getCategory({
-      url: `http://localhost:3700/category/?page=${page}&pagesize=${pageSize}`,
+      url: `http://localhost:3000/category/?page=${page}&pagesize=${pageSize}`,
       headers: {
         Authorization: localStorage.getItem("token"),
         "Content-Type": "application/json",
@@ -32,7 +32,7 @@ const ViewCategories = () => {
 
   const removeCategory = (id) => {
     deleteCategory({
-      url: `http://localhost:3700/category/${id}`,
+      url: `http://localhost:3000/category/${id}`,
       headers: {
         Authorization: localStorage.getItem("token"),
         "Content-Type": "application/json",

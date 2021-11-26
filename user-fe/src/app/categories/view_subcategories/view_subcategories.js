@@ -9,7 +9,7 @@ const ViewSubcategories = () => {
 
   useEffect(() => {
     getCategory({
-      url: `http://localhost:3700/category/?_id=${categoryid}`,
+      url: `http://localhost:3200/category/?_id=${categoryid}`,
       method: "GET",
     });
     // eslint-disable-next-line

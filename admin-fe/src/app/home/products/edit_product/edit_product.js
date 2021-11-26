@@ -49,7 +49,7 @@ const EditProduct = () => {
 
   useEffect(() => {
     getProduct({
-      url: `http://localhost:3700/product/?_id=${id}`,
+      url: `http://localhost:3000/product/?_id=${id}`,
       headers: {
         Authorization: localStorage.getItem("token"),
         "Content-Type": "application/json",
@@ -106,7 +106,7 @@ const EditProduct = () => {
 
   useEffect(() => {
     getTags({
-      url: `http://localhost:3700/tag/?page=0`,
+      url: `http://localhost:3000/tag/?page=0`,
       headers: {
         Authorization: localStorage.getItem("token"),
         "Content-Type": "application/json",
@@ -118,7 +118,7 @@ const EditProduct = () => {
 
   useEffect(() => {
     getCategories({
-      url: `http://localhost:3700/category/?page=0`,
+      url: `http://localhost:3000/category/?page=0`,
       headers: {
         Authorization: localStorage.getItem("token"),
         "Content-Type": "application/json",
@@ -131,7 +131,7 @@ const EditProduct = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     send({
-      url: `http://localhost:3700/product/${id}`,
+      url: `http://localhost:3000/product/${id}`,
       headers: {
         Authorization: localStorage.getItem("token"),
         "Content-Type": "application/json",

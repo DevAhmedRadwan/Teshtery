@@ -12,7 +12,7 @@ const ViewOrders = () => {
 
   useEffect(() => {
     getOrders({
-      url: `http://localhost:3700/order/?page=${page}&pagesize=${pageSize}`,
+      url: `http://localhost:3200/order/?page=${page}&pagesize=${pageSize}`,
       headers: {
         Authorization: localStorage.getItem("token"),
         "Content-Type": "application/json",

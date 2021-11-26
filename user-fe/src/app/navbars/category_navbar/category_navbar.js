@@ -26,7 +26,7 @@ const CategoryNavbar = () => {
 
   useEffect(() => {
     getCategory({
-      url: `http://localhost:3700/category/`,
+      url: `http://localhost:3200/category/`,
       method: "GET",
     });
     // eslint-disable-next-line
